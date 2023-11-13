@@ -1,9 +1,9 @@
 /*
  * script name : groupbyalias.sql
  * description : accompanying script for the blog at 
- *               https://https://www.werkenbijqualogy.com/blog/24/group-by-alias
+ *               https://www.werkenbijqualogy.com/blog/24/group-by-alias
  */
--- this parameters is false by default, but to make sure to get expected results
+-- this parameter is false by default, but to make sure to get expected results
 alter session set GROUP_BY_POSITION_ENABLED = false
 /
 -- script to group by a calculated column before Oracle Database 23c
