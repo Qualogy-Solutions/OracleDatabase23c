@@ -1,8 +1,11 @@
 /*
  * script name : if[not]exists.sql
  * description : accompanying script for the blog at 
- *               https://www.werkenbijqualogy.com/blog/26/if-[not]-exists
+ *               https://www.werkenbijqualogy.com/blog/25/if-[not]-exists
  */
+clear screen
+set serveroutput on size unlimited format wrapped
+set echo on
 -- The script to catch error that might occur when dropping objects
 -- This can be extended to handle more object types
 declare
@@ -41,3 +44,6 @@ create table if not exists mydrivers
   nationality   varchar2(16)
 )
 /
+-- This shows the previous definition of the table. Nothing was changed
+desc mydrivers
+
