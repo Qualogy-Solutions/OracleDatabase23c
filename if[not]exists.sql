@@ -1,7 +1,7 @@
 /*
  * script name : if[not]exists.sql
  * description : accompanying script for the blog at 
- *               https://www.werkenbijqualogy.com/blog/25/if-[not]-exists
+ *               https://www.werkenbijqualogy.com/blog/25/if-not-exists
  */
 clear screen
 set serveroutput on size unlimited format wrapped
