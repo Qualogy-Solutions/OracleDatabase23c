@@ -1,7 +1,7 @@
 /*
  * script name : iterators.sql
  * description : accompanying script for the blog at
- *               https://www.werkenbijqualogy.com/blog/29/...
+ *               https://www.werkenbijqualogy.com/blog/29/new-pl-sql-iterator-constructs
  */
 clear screen
 set serveroutput on size unlimited format wrapped
