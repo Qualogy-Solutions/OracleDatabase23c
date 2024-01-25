@@ -1,7 +1,7 @@
 /*
  * script name : annotations.sql
  * description : accompanying script for the blog at
- *               https://www.werkenbijqualogy.com/blog/29/...
+ *               https://www.werkenbijqualogy.com/blog/30/annotations
  */
 clear screen
 set serveroutput on size unlimited format wrapped
