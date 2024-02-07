@@ -1,11 +1,11 @@
 /*
  * script name : sqlmacros.sql
  * description : accompanying script for the blog at
- *               https://www.werkenbijqualogy.com/blog/29/sql-macros
+ *               https://www.werkenbijqualogy.com/blog/31/sql-macros
  * depends on  : tablevaluesconstructor.sql
  */
-set serveroutput on size unlimited format wrapped
 clear screen
+set serveroutput on size unlimited format wrapped
 -- For this script to work correctly, run the tablevaluesconstructor.sql script first
 -- to setup the tables.
 -- The tablevaluesconstructor.sql can be found at
