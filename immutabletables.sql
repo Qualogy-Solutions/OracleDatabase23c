@@ -1,7 +1,7 @@
 /*
  * script name : immutabletables.sql
  * description : accompanying script for the blog at
- *               https://www.werkenbijqualogy.com/blog/29/immutable-tables
+ *               https://www.werkenbijqualogy.com/blog/32/immutable-tables
  */
 clear screen
 set serveroutput on size unlimited format wrapped
@@ -28,7 +28,7 @@ values
 , ( 'Baku City Circuit'              , 'Baku'        , 'Azerbaijan'    )
 , ( 'Miami International Autodrome'  , 'Miami'       , 'USA'           )
 , ( 'Circuit de Monaco'              , 'Monte-Carlo' , 'Monaco'        )
-, ( 'Circuit de Barcelona-Catalunya' , 'Montmeló'    , 'Spain'         )
+, ( 'Circuit de Barcelona-Catalunya' , 'Montmelï¿½'    , 'Spain'         )
 , ( 'Circuit Gilles Villeneuve'      , 'Montreal'    , 'Canada'        )
 , ( 'Red Bull Ring'                  , 'Spielberg'   , 'Austria'       )
 , ( 'Silverstone Circuit'            , 'Silverstone' , 'UK'            )
@@ -40,8 +40,8 @@ values
 , ( 'Suzuka Circuit'                 , 'Suzuka'      , 'Japan'         )
 , ( 'Losail International Circuit'   , 'Al Daayen'   , 'Qatar'         )
 , ( 'Circuit of the Americas'        , 'Austin'      , 'USA'           )
-, ( 'Autódromo Hermanos Rodríguez'   , 'Mexico City' , 'Mexico'        )
-, ( 'Autódromo José Carlos Pace'     , 'São Paulo'   , 'Brazil'        )
+, ( 'Autï¿½dromo Hermanos Rodrï¿½guez'   , 'Mexico City' , 'Mexico'        )
+, ( 'Autï¿½dromo Josï¿½ Carlos Pace'     , 'Sï¿½o Paulo'   , 'Brazil'        )
 , ( 'Las Vegas Strip Street Circuit' , 'Las Vegas'   , 'United States' )
 , ( 'Yas Marina Circuit'             , 'Abu Dhabi'   , 'UAE'           )
 /
