@@ -1,7 +1,7 @@
 /*
  * script name : domains.sql
  * description : accompanying script for the blog at
- *               https://www.werkenbijqualogy.com/blog/29/...
+ *               https://www.werkenbijqualogy.com/blog/34/sql-domains
  */
 clear screen
 set serveroutput on size unlimited format wrapped
