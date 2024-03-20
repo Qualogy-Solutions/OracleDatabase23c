@@ -1,7 +1,7 @@
 /*
  * script name : reservable.sql
  * description : accompanying script for the blog at
- *               https://www.werkenbijqualogy.com/blog/35/Lock-Free-reservation
+ *               https://www.werkenbijqualogy.com/blog/36/lock-free-reservation
  */
 clear screen
 set serveroutput on size unlimited format wrapped
