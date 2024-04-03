@@ -1,7 +1,7 @@
 /*
  * script name : dualityviews
  * description : accompanying script for the blog at
- *               https://www.werkenbijqualogy.com/blog/34/JSON-relational-duality-views
+ *               https://www.werkenbijqualogy.com/blog/37/json-relational-duality-view
  */
 clear screen
 set serveroutput on size unlimited format wrapped
