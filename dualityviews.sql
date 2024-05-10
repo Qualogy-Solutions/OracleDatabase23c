@@ -3,6 +3,10 @@
  * description : accompanying script for the blog at
  *               https://www.werkenbijqualogy.com/blog/37/json-relational-duality-view
  */
+/* Since Oracle 23ai you need to have the primary key column of the main table
+ * to be named '_id', therefore the first column in the duality view has been renamed.
+ * This will still work on 23c.
+ */
 clear screen
 set serveroutput on size unlimited format wrapped
 rem do some formatting
@@ -135,7 +139,7 @@ where  json_exists( cv.data
 -- create a json relational duality view
 -- fails because of the lack of referential integrity
 create or replace json relational duality view constructor_dv as
-select json { 'constructorid' : con.constructorid
+select json { '_id'           : con.constructorid
             , 'name'          : con.name
             , 'nationality'   : con.nationality
             , 'drivers'       :
@@ -181,7 +185,7 @@ add constraint fk_constructordrivers_drivers
 /
 
 create or replace json relational duality view constructor_dv as
-select json { 'constructorid' : con.constructorid
+select json { '_id'           : con.constructorid
             , 'name'          : con.name
             , 'nationality'   : con.nationality
             , 'drivers'       :
@@ -230,7 +234,7 @@ where  json_exists( cdv.data
 -- create a simple driver view, using GraphQL
 create or replace json relational duality view simpledriver_dv as
 drivers @insert @update @delete
-{ driverid      : driverid
+{ _id           : driverid
 , driver_number : driver_number
 , code          : code
 , driver_name   : driver_name
@@ -248,7 +252,7 @@ where  json_exists( sdv.data
 /
 -- change the number back to 33
 update simpledriver_dv sdv
-set    data = '{ "driverid" : 2
+set    data = '{ "_id" : 2
                , "driver_number" : 33
                , "code" : "VER"
                , "driver_name" : "Max Verstappen"
@@ -274,7 +278,7 @@ where  json_exists( sdv.data
 -- this time using GraphQL to define it
 create or replace json relational duality view driver_dv as
 drivers @insert @update @delete
-{ driverid      : driverid
+{ _id           : driverid
 , driver_number : driver_number
 , code          : code
 , driver_name   : driver_name
@@ -328,7 +332,7 @@ where  json_exists( cdv.data
                   )
 /
 update constructor_dv cdv
-set    data = '{ "constructorid" : 1
+set    data = '{ "_id" : 1
                , "name" : "AlphaTauri"
                , "nationality" : "Italian"
                , "drivers" :
